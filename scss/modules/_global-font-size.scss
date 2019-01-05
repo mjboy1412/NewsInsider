@@ -1,0 +1,37 @@
+//set global font-size in many screens;
+//font-size xs
+html {
+  font-size: $fs-xs;
+}
+
+//font-size sm
+
+@media not screen and (max-width: $screen-min-sm) {
+  html {
+    font-size: $fs-sm;
+  }
+}
+
+//grid size md
+
+@media not screen and (max-width: $screen-min-md) {
+  html {
+    font-size: $fs-md;
+  }
+}
+
+//grid size lg
+
+@media not screen and (max-width: $screen-min-lg) {
+  html {
+    font-size: $fs-lg;
+  }
+}
+
+//grid size xlg
+
+@media not screen and (max-width: $screen-min-xlg) {
+  html {
+    font-size: $fs-xlg;
+  }
+}

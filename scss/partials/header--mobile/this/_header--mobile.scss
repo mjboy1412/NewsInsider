@@ -1,0 +1,21 @@
+.header__wrapper--mobile {
+  display: flex;
+  height: 47px;
+  border-bottom: 1px solid $cl-gray;
+  position: fixed;
+  background: $cl-white;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  justify-content: space-between;
+  @import "../header__logo/_header__logo";
+  @import "../header__toggle/header__toggle";
+  @import "../header__search/_header__search";
+}
+
+@media screen and (min-width: $screen-min-xlg) {
+  .header__wrapper--mobile {
+    display: none;
+  }
+}
+

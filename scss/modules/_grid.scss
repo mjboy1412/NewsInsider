@@ -1,0 +1,82 @@
+// grid responsive
+.col {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.container--partial {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+//grid size xs
+.container {
+  width: $container-xs;
+}
+
+@for $i from 1 through $num-of-grid {
+  .col-xs-#{$i} {
+    width: calc(#{$i * $width-per-grid});
+  }
+}
+
+//grid size sm
+
+@media not screen and (max-width: $screen-min-sm) {
+  .container {
+    width: $container-sm;
+  }
+  @for $i from 1 through $num-of-grid {
+    .col-sm-#{$i} {
+      width: calc(#{$i * $width-per-grid});
+    }
+  }
+}
+
+//grid size md
+
+@media not screen and (max-width: $screen-min-md) {
+  .container {
+    width: $container-md;
+  }
+  @for $i from 1 through $num-of-grid {
+    .col-md-#{$i} {
+      width: calc(#{$i * $width-per-grid});
+    }
+  }
+}
+
+//grid size lg
+
+@media not screen and (max-width: $screen-min-lg) {
+  .container {
+    width: $container-lg;
+  }
+  @for $i from 1 through $num-of-grid {
+    .col-lg-#{$i} {
+      width: calc(#{$i * $width-per-grid});
+    }
+  }
+}
+
+//grid size xlg
+
+@media not screen and (max-width: $screen-min-xlg) {
+  .container {
+    width: $container-xlg;
+  }
+  @for $i from 1 through $num-of-grid {
+    .col-xlg-#{$i} {
+      width: calc(#{$i * $width-per-grid});
+    }
+  }
+}

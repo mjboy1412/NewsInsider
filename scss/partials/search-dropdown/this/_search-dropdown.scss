@@ -1,0 +1,29 @@
+.search-dropdown {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  background: #eaeaea;
+}
+
+.search-dropdown--on {
+  display: flex;
+}
+
+.search-dropdown--off {
+  display: none;
+}
+
+.search-dropdown__form {
+  background: #eaeaea;
+  height: 32.5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

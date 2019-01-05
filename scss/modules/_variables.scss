@@ -1,0 +1,46 @@
+//font style
+$default-font: 'Roboto', sans-serif;
+
+//screen size
+$screen-max-xs: 575px;
+$screen-min-sm: 576px;
+$screen-max-sm: 767px;
+$screen-min-md: 768px;
+$screen-max-md: 991px;
+$screen-min-lg: 992px;
+$screen-max-lg: 1199px;
+$screen-min-xlg: 1230px;
+
+//size of container
+$container-xs: calc(100% - 10px);
+$container-sm: calc(100% - 10px);
+$container-md: 760px;
+$container-lg: 980px;
+$container-xlg: 1200px;
+
+//grid build variable
+$num-of-grid: 12;
+$width-per-grid: 100% / $num-of-grid;
+$gutter-xs: 3px;
+$gutter-sm: 5px;
+$gutter-md: 7px;
+$gutter-lg: 9px;
+$gutter-xlg: 11px;
+
+//color
+$cl-gray: #d0cdcd;
+$cl-lightblue: #d1ebf5;
+$cl-blue: #036fe2;
+$cl-black: black;
+$cl-white: white;
+$cl-page1: #185f7d;
+$cl-page2: #299ecc;
+$cl-heading-1: #505659;
+
+//font size
+$fs-xs: 11px;
+$fs-sm: 10px;
+$fs-md: 11px;
+$fs-lg: 12px;
+$fs-xlg: 13px;
+

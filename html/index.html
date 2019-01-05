@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>News Insider</title>
+</head>
+<body>
+<button class="btn btn--toggle-feedback" onclick="open_feedback()">Feedback</button>
+<div id="feedback__wrapper" class="feedback__wrapper feedback__wrapper--off">
+    <div class="feedback__popup">
+        <div class="feedback__head">
+            <p>Feedback</p>
+            <i class="fas fa-times" onclick="close_feedback()"></i>
+        </div>
+        <form action="#" class="feedback__form">
+            <textarea class="textarea textarea--feedback " name="feedback" cols="30" rows="10"
+                      placeholder="Send us your comments or suggestions..."></textarea>
+            <input class="input input--feedback" type="text" placeholder="Your email address">
+            <button class="btn btn--send-feedback">Send</button>
+        </form>
+    </div>
+</div>
+<header class="header__wrapper--pc">
+    <div class="header__content container">
+        <div class="header__logo">
+            <div class="logo logo__page">
+                <a href="index.html">
+                    <h1>NEWS INSIDER</h1>
+                </a>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>TECH INSIDER</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>BUSINESS</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>POLITIC</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>STRATEGY</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>SCIENCE</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>LIFE</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+            <div class="nav__element">
+                <div class="nav__head">
+                    <a href="detail-page.html">
+                        <h2>ALLS</h2>
+                    </a>
+                </div>
+                <div class="nav__dropdown">
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050821,width-400,height-225/These-smart-light-bulbs-are-one-of-the-best-ways-to-upgrade-any-home-heres-what-theyre-like-to-use.jpg"
+                                    alt="These smart light bulbs are one of the best ways to upgrade any home - here's what they're like to use">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate"> These smart light bulbs are one of the best ways to upgrade any home - here's what
+                                    they're
+                                    like to use</h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67051195,width-400,height-225/Sundar-Pichai-says-more-than-100-Google-employees-were-working-on-a-censored-China-search-engine-at-one-point.jpg"
+                                    alt="Sundar Pichai says more than 100 Google employees were working on a censored China search engine at one point">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    Sundar Pichai says more than 100 Google employees were working on a censored China
+                                    search engine at one point
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card card--on-nav">
+                        <a class="card__link-wrapper" href="detail-page.html">
+                            <div class="card__img card__img--on-nav"><img
+                                    src="https://www.businessinsider.in/thumb/msid-67050134,width-400,height-225/8-of-the-most-envy-inducing-tiny-homes-of-2018-including-a-house-that-can-be-printed-for-less-than-4000.jpg"
+                                    alt="8 of the most envy-inducing tiny homes of 2018 - including a house that can be printed for less than $4,000">
+                            </div>
+                            <div class="card__text card__text--on-nav" data-char-num="50">
+                                <h3 class="text--truncate">
+                                    8 of the most envy-inducing tiny homes of 2018 - including a house that can be
+                                    printed
+                                    for less than $4,000
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </nav>
+        <div class="header__search">
+            <div class="search__toggle" onclick="toggle_search()">
+                <i class="fas fa-search logo logo__search"></i>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="header__wrapper--mobile">
+    <div class="header__toggle">
+        <button class="btn btn--toggle-mobile" onclick="open_side_nav()">
+            <i class="fas fa-align-justify logo logo__stack"></i>
+        </button>
+    </div>
+    <div class="header__logo col col-xs-8 col-md-5 col-lg-4">
+        <div class="logo logo__page">
+            <a href="#">
+                <span>NEWS INSIDER</span>
+            </a>
+        </div>
+    </div>
+    <div class="header__search">
+        <button class="btn btn--toggle-mobile" onclick="toggle_search()">
+            <i class="fas fa-search logo__search"></i>
+        </button>
+    </div>
+</header>
+<div id="search-dropdown" class="search-dropdown search-dropdown--off">
+    <div class="container">
+        <form action="#" class="search-dropdown__form col col-xs-12">
+            <input class="input input--search" type="text" placeholder="Search">
+            <button class="btn btn--search" type="submit"><i class="fas fa-search logo logo__search"></i></button>
+        </form>
+    </div>
+</div>
+<div id="nav-aside" class="nav-aside nav-aside--off col col-xs-8 col-sm-5">
+    <div class="nav-aside__logo">
+        <div class="logo logo__page">
+            <a href="index.html">
+                <span>NEWS INSIDER</span>
+            </a>
+        </div>
+    </div>
+    <div class="nav-aside__list">
+        <a href="detail-page.html">Tech insider</a>
+        <a href="detail-page.html">Business</a>
+        <a href="detail-page.html">Politic</a>
+        <a href="detail-page.html">Strategy</a>
+        <a href="detail-page.html">Science</a>
+        <a href="detail-page.html">Life</a>
+        <a href="detail-page.html">Alls</a>
+    </div>
+    <button class="btn btn--close-sidenav " onclick="close_side_nav()">
+        <i class="fas fa-times logo logo__search"></i>
+    </button>
+</div>
+<div id="body-cover" class="body-cover body-cover--off" onclick="close_side_nav()">
+</div>
+<main class="main container">
+    <section class="section section--breaking-news col col-xs-12">
+        <div class="section__head section__head--breaking-news ">
+            <h2>BREAKING NEWS</h2>
+        </div>
+        <div class="section__content section__content--breaking-news">
+            <article class="card card--breaking-news col col-xs-12">
+                <a class="card__link-wrapper card__link-wrapper--breaking-news" href="detail-page.html"
+                   title="Indian government appoints former economic affairs secretary Shaktikanta Das as Reserve Bank India governor">
+                    <div class="card__img card__img--breaking-news">
+                        <img src="https://www.businessinsider.in/photo/67046564/Indian-government-appoints-former-economic-affairs-secretary-Shaktikanta-Das-as-Reserve-Bank-of-India-governor.jpg?228513"
+                             alt="Indian government appoints former economic affairs secretary Shaktikanta Das as Reserve Bank of India governor">
+                    </div>
+                    <div class="card__text card__text--breaking-news" data-char-num="60">
+                        <h3 class="text--truncate">Indian government appoints former economic affairs secretary Shaktikanta Das as Reserve Bank
+                            of
+                            India
+                            governor</h3>
+                        <p>By IANS</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section class="section section--recommended-read col col-lg-3">
+        <div class="section__head section__head--recommended-read">
+            <h2>RECOMMENDED READ</h2>
+        </div>
+        <div class="section__content section__content--recommended-read">
+            <article class="card card--recommended-read col col-xs-12">
+                <a class="card__link-wrapper card__link-wrapper--recommended-read" href="detail-page.html">
+                    <h3 title="Only 18 women made it to this year’s Forbes list of 100 highest-earning Indian celebrities">
+                        Only 18 women made it to this year’s Forbes list of 100 highest-earning Indian
+                        celebrities
+                    </h3>
+                </a>
+            </article>
+            <article class="card card--recommended-read col col-xs-12">
+                <a class="card__link-wrapper card__link-wrapper--recommended-read" href="detail-page.html">
+                    <h3 title="India’s markets regulator could soon allow the direct listing of Indian companies on foreign stock exchanges">
+                        India’s markets regulator could soon allow the direct listing of Indian companies on foreign
+                        stock exchanges
+                    </h3>
+                </a>
+            </article>
+            <article class="card card--recommended-read col col-xs-12">
+                <a class="card__link-wrapper card__link-wrapper--recommended-read" href="detail-page.html">
+                    <h3 title="India’s top environmental tribunal has ordered the Delhi government to pay ₹250 million to the national pollution control agency so it can tackle the city’s air problem">
+                        India’s top environmental tribunal has ordered the Delhi government to pay ₹250 million to the
+                        national pollution control agency so it can tackle the city’s air problem
+                    </h3>
+                </a>
+            </article>
+            <article class="card card--recommended-read col col-xs-12">
+                <a class="card__link-wrapper card__link-wrapper--recommended-read" href="detail-page.html">
+                    <h3 title="Apple isn't giving into the Indian government by introducing the DND app — it has found a middle ground">
+                        Apple isn't giving into the Indian government by introducing the DND app — it has found a middle
+                        ground
+                    </h3>
+                </a>
+            </article>
+            <article class="card card--recommended-read col col-xs-12">
+                <a class="card__link-wrapper card__link-wrapper--recommended-read" href="detail-page.html">
+                    <h3 title="India’s Prime Minister Modi achieves symbolic victory by securing the G20 summit hosting gig in the country’s 75th year of independence">
+                        India’s Prime Minister Modi achieves symbolic victory by securing the G20 summit hosting gig in
+                        the country’s 75th year of independence
+                    </h3>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section class="section section--latest-stories col col-lg-6">
+        <div class="section__head section__head--latest-stories">
+            <h2>LATEST STORIES</h2>
+        </div>
+        <div class="section__content section__content--latest-stories">
+            <article class="card card--latest-stories col col-xs-12"
+                     title="There might finally be a phone in the budget segment that won’t break the first time you drop it">
+                <a class="card__link-wrapper card__link-wrapper--latest-stories" href="detail-page.html">
+                    <div class="card__img card__img--latest-stories">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67047452,width-640,resizemode-4/There-might-finally-be-a-phone-in-the-budget-segment-that-wont-break-the-first-time-you-drop-it.jpg?437178"
+                                alt="There might finally be a phone in the budget segment that won’t break the first time
+you drop it">
+                    </div>
+                    <div class="card__text card__text--latest-stories">
+                        <h3 class="text--truncate"> There might finally be a phone in the budget segment that won’t break the first time
+                            you drop it</h3>
+                        <p>10 hrs ago by Prabhjote Gill</p>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--latest-stories col col-xs-12"
+                     title="There might finally be a phone in the budget segment that won’t break the first time you drop it">
+                <a class="card__link-wrapper card__link-wrapper--latest-stories" href="detail-page.html">
+                    <div class="card__img card__img--latest-stories">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67047452,width-640,resizemode-4/There-might-finally-be-a-phone-in-the-budget-segment-that-wont-break-the-first-time-you-drop-it.jpg?437178"
+                                alt="There might finally be a phone in the budget segment that won’t break the first time
+you drop it">
+                    </div>
+                    <div class="card__text card__text--latest-stories">
+                        <h3 class="text--truncate"> There might finally be a phone in the budget segment that won’t break the first time
+                            you drop it</h3>
+                        <p>10 hrs ago by Prabhjote Gill</p>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--latest-stories col col-xs-12"
+                     title="There might finally be a phone in the budget segment that won’t break the first time you drop it">
+                <a class="card__link-wrapper card__link-wrapper--latest-stories" href="detail-page.html">
+                    <div class="card__img card__img--latest-stories">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67047452,width-640,resizemode-4/There-might-finally-be-a-phone-in-the-budget-segment-that-wont-break-the-first-time-you-drop-it.jpg?437178"
+                                alt="There might finally be a phone in the budget segment that won’t break the first time
+you drop it">
+                    </div>
+                    <div class="card__text card__text--latest-stories">
+                        <h3 class="text--truncate"> There might finally be a phone in the budget segment that won’t break the first time
+                            you drop it</h3>
+                        <p>10 hrs ago by Prabhjote Gill</p>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--latest-stories col col-xs-12"
+                     title="There might finally be a phone in the budget segment that won’t break the first time you drop it">
+                <a class="card__link-wrapper card__link-wrapper--latest-stories" href="detail-page.html">
+                    <div class="card__img card__img--latest-stories">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67047452,width-640,resizemode-4/There-might-finally-be-a-phone-in-the-budget-segment-that-wont-break-the-first-time-you-drop-it.jpg?437178"
+                                alt="There might finally be a phone in the budget segment that won’t break the first time
+you drop it">
+                    </div>
+                    <div class="card__text card__text--latest-stories">
+                        <h3 class="text--truncate"> There might finally be a phone in the budget segment that won’t break the first time
+                            you drop it</h3>
+                        <p>10 hrs ago by Prabhjote Gill</p>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--latest-stories col col-xs-12"
+                     title="There might finally be a phone in the budget segment that won’t break the first time you drop it">
+                <a class="card__link-wrapper card__link-wrapper--latest-stories" href="detail-page.html">
+                    <div class="card__img card__img--latest-stories">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67047452,width-640,resizemode-4/There-might-finally-be-a-phone-in-the-budget-segment-that-wont-break-the-first-time-you-drop-it.jpg?437178"
+                                alt="There might finally be a phone in the budget segment that won’t break the first time
+you drop it">
+                    </div>
+                    <div class="card__text card__text--latest-stories">
+                        <h3 class="text--truncate"> There might finally be a phone in the budget segment that won’t break the first time
+                            you drop it</h3>
+                        <p>10 hrs ago by Prabhjote Gill</p>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--latest-stories col col-xs-12"
+                     title="There might finally be a phone in the budget segment that won’t break the first time you drop it">
+                <a class="card__link-wrapper card__link-wrapper--latest-stories" href="detail-page.html">
+                    <div class="card__img card__img--latest-stories">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67047452,width-640,resizemode-4/There-might-finally-be-a-phone-in-the-budget-segment-that-wont-break-the-first-time-you-drop-it.jpg?437178"
+                                alt="There might finally be a phone in the budget segment that won’t break the first time
+you drop it">
+                    </div>
+                    <div class="card__text card__text--latest-stories">
+                        <h3 class="text--truncate"> There might finally be a phone in the budget segment that won’t break the first time
+                            you drop it</h3>
+                        <p>10 hrs ago by Prabhjote Gill</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <section class="section section--trending col col-lg-3">
+        <div class="section__head section__head--trending">
+            <h2>TRENDING</h2>
+        </div>
+        <div class="section__content section__content--trending container--partial">
+            <article class="card card--recommended-news col col-sm-4 col-lg-12"
+                     title="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                <a class="card__link-wrapper card__link-wrapper--recommended-news" href="detail-page.html">
+                    <div class=" card__img card__img--recommended-news">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67048985,width-640,resizemode-4/Googles-CEO-explains-why-a-picture-of-Donald-Trump-comes-up-when-you-search-for-idiot.jpg?66886"
+                                alt="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                    </div>
+                    <div class="card__text card__text--recommended-news">
+                        <h3 class="text--truncate">Google's CEO explains why a picture of Donald Trump comes up when you search for
+                            'idiot'</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--recommended-news col col-sm-4 col-lg-12"
+                     title="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                <a class="card__link-wrapper card__link-wrapper--recommended-news" href="detail-page.html">
+                    <div class=" card__img card__img--recommended-news">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67048985,width-640,resizemode-4/Googles-CEO-explains-why-a-picture-of-Donald-Trump-comes-up-when-you-search-for-idiot.jpg?66886"
+                                alt="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                    </div>
+                    <div class="card__text card__text--recommended-news">
+                        <h3 class="text--truncate">Google's CEO explains why a picture of Donald Trump comes up when you search for
+                            'idiot'</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--recommended-news col col-sm-4 col-lg-12"
+                     title="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                <a class="card__link-wrapper card__link-wrapper--recommended-news" href="detail-page.html">
+                    <div class=" card__img card__img--recommended-news">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67048985,width-640,resizemode-4/Googles-CEO-explains-why-a-picture-of-Donald-Trump-comes-up-when-you-search-for-idiot.jpg?66886"
+                                alt="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                    </div>
+                    <div class="card__text card__text--recommended-news">
+                        <h3 class="text--truncate">Google's CEO explains why a picture of Donald Trump comes up when you search for
+                            'idiot'</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--recommended-news col col-sm-4 col-lg-12"
+                     title="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                <a class="card__link-wrapper card__link-wrapper--recommended-news" href="detail-page.html">
+                    <div class=" card__img card__img--recommended-news">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67048985,width-640,resizemode-4/Googles-CEO-explains-why-a-picture-of-Donald-Trump-comes-up-when-you-search-for-idiot.jpg?66886"
+                                alt="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                    </div>
+                    <div class="card__text card__text--recommended-news">
+                        <h3 class="text--truncate">Google's CEO explains why a picture of Donald Trump comes up when you search for
+                            'idiot'</h3>
+                    </div>
+                </a>
+            </article>
+            <article class="card card--recommended-news col col-sm-4 col-lg-12"
+                     title="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                <a class="card__link-wrapper card__link-wrapper--recommended-news" href="detail-page.html">
+                    <div class=" card__img card__img--recommended-news">
+                        <img
+                                src="https://www.businessinsider.in/thumb/msid-67048985,width-640,resizemode-4/Googles-CEO-explains-why-a-picture-of-Donald-Trump-comes-up-when-you-search-for-idiot.jpg?66886"
+                                alt="Google's CEO explains why a picture of Donald Trump comes up when you search for 'idiot'">
+                    </div>
+                    <div class="card__text card__text--recommended-news">
+                        <h3 class="text--truncate">Google's CEO explains why a picture of Donald Trump comes up when you search for
+                            'idiot'</h3>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__subscription col col-xs-12">
+        <h2>LIKE WHAT YOU READ ?</h2>
+        <p class="col col-xs-9 col-md-8 col-lg-10">Subscribe us for more latest news. Enter your email down below so we could send you <br> a message daily with
+            more interesting story:</p>
+        <form action="#" class="col col-xs-9 col-md-8 col-lg-5">
+            <input class="input input--subscription" type="text" placeholder="Email address">
+            <button class="btn btn--subscription" type="submit">Send</button>
+        </form>
+    </div>
+    <div class="footer__social-media">
+        <h2>
+            FOLLOW US ON
+        </h2>
+        <p class="icon  col col-xs-7 col-sm-3 col-md-3 col-xlg-2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        </p>
+        <p>
+            Copyright © 2018 All Rights Reserved
+        </p>
+    </div>
+</footer>
+<script src="../js/all_global_var.js"></script>
+<script src="../js/all_function.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

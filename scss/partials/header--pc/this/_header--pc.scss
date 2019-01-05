@@ -1,0 +1,24 @@
+.header__wrapper--pc {
+  height: 47px;
+  border-bottom: 1px solid $cl-gray;
+  position: fixed;
+  background: $cl-white;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  .header__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @import "../header__logo/_header__logo";
+    @import "../header__nav/_header__nav";
+    @import "../header__search/_header__search";
+  }
+}
+
+@media not screen and (min-width: $screen-min-xlg) {
+  .header__wrapper--pc {
+    display: none;
+  }
+}

@@ -1,0 +1,76 @@
+//sections class
+.section {
+  margin-top: 20px;
+}
+
+.section__head {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: $cl-page1;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+.section__content {
+  width: 100%;
+}
+
+//sections sections
+.section--breaking-news {
+  margin-top: 0;
+  height: calc(400px + 15vw);
+  max-height: 690px;
+}
+
+.section__head--breaking-news {
+  //TODO
+}
+
+.section__content--breaking-news {
+  height: calc(100% - 60px);
+}
+
+//sections recommended read
+.section--recommended-read {
+  //TODO
+}
+
+.section__head--recommended-read {
+  //TODO
+}
+
+.section__content--recommended-read {
+  //TODO
+}
+
+//sections latest-stories
+.section--latest-stories {
+  //TODO
+}
+
+.section__head--latest-stories {
+  //TODO
+}
+
+.section__content--latest-stories {
+  //TODO
+}
+
+//sections trending
+.section--trending {
+  //TODO
+}
+
+.section__head--trending {
+  //TODO
+}
+
+.section__content--trending {
+  //TODO
+}
+
