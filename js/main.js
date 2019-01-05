@@ -1,12 +1,8 @@
-
-var stateCheck = setInterval(() => {
-    if (document.readyState === 'complete') {
-        // The page is fully loaded
-        console.log(document.readyState);
+document.addEventListener('readystatechange', event => {
+    if (event.target.readyState === 'complete') {
         text_truncate();
-        clearInterval(stateCheck);
         console.log("ready");
-
+    } else if (event.target.readyState === 'loading') {
+        console.log("Document not ready yet");
     }
-}, 100);
-
+});
