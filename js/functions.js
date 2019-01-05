@@ -56,6 +56,5 @@ function text_truncate() {
             limit_char++;
         }
     }
-
 }
 
