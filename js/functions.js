@@ -40,4 +40,3 @@ function close_side_nav() {
     body_cover.classList.remove('body-cover--on');
     body_cover.classList.add('body-cover--off');
 }
-
