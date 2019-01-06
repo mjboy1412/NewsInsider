@@ -17,6 +17,7 @@
   }
 }
 
+// disable header for pc screen when the screen size equals or less than 1230px
 @media screen and (max-width: $screen-min-xlg) {
   .header__wrapper--pc {
     display: none;

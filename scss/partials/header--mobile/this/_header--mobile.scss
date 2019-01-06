@@ -13,6 +13,7 @@
   @import "../header__search/_header__search";
 }
 
+// disable header for mobile screen when the screen size is greater 1230px
 @media not screen and (max-width: $screen-min-xlg) {
   .header__wrapper--mobile {
     display: none;

@@ -1,7 +1,7 @@
-//font style
+// font style
 $default-font: 'Roboto', sans-serif;
 
-//screen size
+// screen size
 $screen-max-xs: 575px;
 $screen-min-sm: 576px;
 $screen-max-sm: 767px;
@@ -11,14 +11,14 @@ $screen-min-lg: 992px;
 $screen-max-lg: 1229px;
 $screen-min-xlg: 1230px;
 
-//size of container
+// size of container
 $container-xs: calc(100% - 10px);
 $container-sm: calc(100% - 10px);
 $container-md: 760px;
 $container-lg: 980px;
 $container-xlg: 1200px;
 
-//grid build variable
+// grid build variables
 $num-of-grid: 12;
 $width-per-grid: 100% / $num-of-grid;
 $gutter-xs: 3px;
@@ -27,7 +27,7 @@ $gutter-md: 7px;
 $gutter-lg: 9px;
 $gutter-xlg: 11px;
 
-//color
+// color
 $cl-gray: #d0cdcd;
 $cl-lightblue: #d1ebf5;
 $cl-blue: #036fe2;
@@ -37,10 +37,9 @@ $cl-page1: #185f7d;
 $cl-page2: #299ecc;
 $cl-heading-1: #505659;
 
-//font-size
+// font-size
 // these font-sizes will be used depend on the size of each screen
 // for example: $fs-xs is the font-size for extra small screen, $fs-sm for small screen, ...etc
-
 $fs-xs: 11px;
 $fs-sm: 10px;
 $fs-md: 11px;

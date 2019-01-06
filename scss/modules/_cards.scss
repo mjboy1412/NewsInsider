@@ -1,4 +1,4 @@
-//Card class
+// Card class
 .card {
   padding: 7px;
 }
@@ -60,7 +60,7 @@
   }
 }
 
-//card on nav
+// card on nav
 .card--on-nav {
   width: 22%;
   height: 245px;
@@ -86,7 +86,7 @@
   }
 }
 
-//card in breaking news
+// card in breaking news section of the index-page
 .card--breaking-news {
   position: relative;
   height: 100%;
@@ -132,7 +132,7 @@
   }
 }
 
-//card in recommended read
+// card in recommended read section of the index-page
 .card--recommended-read {
   //TODO
 }
@@ -152,7 +152,7 @@
   }
 }
 
-//card in latest stories
+//card in latest stories section of the index-page
 .card--latest-stories {
   height: 21vw;
   min-height: 375px;
@@ -191,7 +191,7 @@
   }
 }
 
-//card in trending
+//card in trending section of the index-page
 .card--trending {
   height: 15vw;
   min-height: 345px;
@@ -233,7 +233,7 @@
   }
 }
 
-//card in recommended-news
+// card in recommended-news section of the detail-page
 .card--recommended-news {
   height: 15vw;
   min-height: 345px;

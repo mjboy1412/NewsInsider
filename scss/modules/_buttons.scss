@@ -60,8 +60,7 @@
   z-index: 1;
 }
 
-//disable feedback__toggle when screen lower than 1230px;
-
+// disable feedback__toggle when screen lower than 1230px;
 @media not screen and (min-width: $screen-min-xlg) {
   .btn--toggle-feedback {
     display: none;

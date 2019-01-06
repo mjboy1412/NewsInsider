@@ -12,6 +12,7 @@ function close_feedback() {
 
 function toggle_search() {
     var search_area = document.getElementById("search-dropdown");
+    // search_available is a global variable
     if (search_available === false) {
         search_area.classList.add("search-dropdown--on");
         search_area.classList.remove("search-dropdown--off");
