@@ -17,7 +17,7 @@
   }
 }
 
-@media not screen and (min-width: $screen-min-xlg) {
+@media screen and (max-width: $screen-min-xlg) {
   .header__wrapper--pc {
     display: none;
   }

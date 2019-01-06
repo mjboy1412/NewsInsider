@@ -41,20 +41,3 @@ function close_side_nav() {
     body_cover.classList.add('body-cover--off');
 }
 
-function text_truncate() {
-    var text_ellipsis = document.getElementsByClassName("text--truncate");
-    var num_class = text_ellipsis.length;
-    for (var i = 0; i < num_class; i++) {
-        var limit_char = 0;
-        while (text_ellipsis[i].scrollHeight > text_ellipsis[i].clientHeight) {
-            if (limit_char == 100) {
-                break;
-            }
-            var text = text_ellipsis[i].innerText;
-            text = text.substring(0, text.length - 4) + "...";
-            text_ellipsis[i].innerText = text;
-            limit_char++;
-        }
-    }
-}
-

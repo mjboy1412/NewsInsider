@@ -13,7 +13,7 @@
   @import "../header__search/_header__search";
 }
 
-@media screen and (min-width: $screen-min-xlg) {
+@media not screen and (max-width: $screen-min-xlg) {
   .header__wrapper--mobile {
     display: none;
   }
