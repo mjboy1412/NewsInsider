@@ -37,7 +37,10 @@ $cl-page1: #185f7d;
 $cl-page2: #299ecc;
 $cl-heading-1: #505659;
 
-//font size
+//font-size
+// these font-sizes will be used depend on the size of each screen
+// for example: $fs-xs is the font-size for extra small screen, $fs-sm for small screen, ...etc
+
 $fs-xs: 11px;
 $fs-sm: 10px;
 $fs-md: 11px;
