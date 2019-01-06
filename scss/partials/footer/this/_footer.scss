@@ -2,13 +2,16 @@
   width: 100%;
 }
 
-.footer__subscription {
-  background: $cl-lightblue;
-  flex-direction: column;
-  height: 340px;
+.footer__subscription, footer__social-media {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.footer__subscription {
+  background: $cl-lightblue;
+  height: 340px;
   form {
     height: 30px;
     display: flex;
@@ -28,10 +31,6 @@
 .footer__social-media {
   height: 265px;
   background: #505659;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   h2 {
     color: $cl-white;
     font-size: 1.6rem;
