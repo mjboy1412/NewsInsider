@@ -1,7 +1,7 @@
-// font style
+// Font style
 $default-font: 'Roboto', sans-serif;
 
-// screen size
+// Screen size
 $screen-max-xs: 575px;
 $screen-min-sm: 576px;
 $screen-max-sm: 767px;
@@ -11,14 +11,14 @@ $screen-min-lg: 992px;
 $screen-max-lg: 1229px;
 $screen-min-xlg: 1230px;
 
-// size of container
+// Size of container
 $container-xs: calc(100% - 10px);
 $container-sm: calc(100% - 10px);
 $container-md: 760px;
 $container-lg: 980px;
 $container-xlg: 1200px;
 
-// grid build variables
+// Grid build variables
 $num-of-grid: 12;
 $width-per-grid: 100% / $num-of-grid;
 $gutter-xs: 3px;
@@ -27,22 +27,38 @@ $gutter-md: 7px;
 $gutter-lg: 9px;
 $gutter-xlg: 11px;
 
-// color
-$cl-gray: #d0cdcd;
-$cl-lightblue: #d1ebf5;
+// Colors which are used in multi elements
+// Changing the value will affect many elements
+$cl-gray-light: #d0cdcd;
+$cl-gray: #505659;
+$cl-gray-dark: #3a3f42;
+$cl-blue-lighter: #d1ebf5;
+$cl-blue-light: #299ecc;
 $cl-blue: #036fe2;
+$cl-blue-dark: #185f7d;
 $cl-black: black;
+$cl-black-light: #222222;
 $cl-white: white;
-$cl-page1: #185f7d;
-$cl-page2: #299ecc;
-$cl-heading-1: #505659;
+$cl-transparent: transparent;
 
-// font-size
-// these font-sizes will be used depend on the size of each screen
-// for example: $fs-xs is the font-size for extra small screen, $fs-sm for small screen, ...etc
+// Colors which are used in just 1 or 2 specific elements
+$cl-facebook-background-blue: #306199;
+$cl-twitter-background-blue: #1da1f3;
+$cl-google-plus-background-orange: #dd4b39;
+$cl-feedback-button-background-black: #2C2C2C;
+$cl-send-feedback-button-background-blue: #337ab7;
+$cl-subscription-button-background-blue: #4cb9ea;
+$cl-search-dropdown-background-gray: #eaeaea;
+$cl-body-cover-background-black: rgba(0, 0, 0, 0.6);
+$cl-feedback-cover-background-black: rgba(0, 0, 0, 0.6);
+$cl-logo-stack-font-color-black: #241f20;
+$cl-breaking-news-background-black: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 42%, rgba(0, 0, 0, 0.2) 52%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.4) 100%);
+
+// Font-size
+// These font-sizes will be used depend on the size of each screen
+// For example: $fs-xs is the font-size for extra small screen, $fs-sm for small screen, ...etc
 $fs-xs: 11px;
 $fs-sm: 10px;
 $fs-md: 11px;
 $fs-lg: 12px;
 $fs-xlg: 13px;
-//just a test

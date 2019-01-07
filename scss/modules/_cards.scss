@@ -59,7 +59,7 @@
   }
 }
 
-// card on nav
+// Card on nav
 .card--on-nav {
   width: 22%;
   height: 245px;
@@ -80,12 +80,12 @@
   background: $cl-white;
   h3 {
     font-size: 1.3rem;
-    color: $cl-heading-1;
+    color: $cl-gray;
     max-height: 2.4em;
   }
 }
 
-// card in breaking news section of the index-page
+// Card in breaking news section of the index-page
 .card--breaking-news {
   position: relative;
   height: 100%;
@@ -94,7 +94,7 @@
 .card__link-wrapper--breaking-news {
   display: block;
   position: relative;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 42%, rgba(0, 0, 0, 0.2) 52%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.4) 100%);
+  background: $cl-breaking-news-background-black;
 }
 
 .card__img--breaking-news {
@@ -139,14 +139,14 @@
 
 .card__link-wrapper--recommended-read {
   display: flex;
-  border-top: 1px solid $cl-gray;
+  border-top: 1px solid $cl-gray-light;
   height: auto;
   justify-content: center;
   align-items: center;
   h3 {
     width: 94%;
     font-size: 1.3rem;
-    color: #333;
+    color: $cl-gray-dark;
     margin-bottom: 20px;
     margin-top: 10px;
   }
@@ -177,7 +177,7 @@
   min-height: 80px;
   height: 25%;
   color: $cl-white;
-  background: #222222;
+  background: $cl-black-light;
   align-items: center;
   h3 {
     font-size: 1.3rem;
@@ -186,7 +186,7 @@
   }
   p {
     font-size: 1rem;
-    color: $cl-page2;
+    color: $cl-blue-light;
     width: 90%;
   }
 }
@@ -216,7 +216,7 @@
   min-height: 80px;
   height: 25%;
   color: $cl-white;
-  background: #222222;
+  background: $cl-black-light;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -228,7 +228,7 @@
   }
   p {
     font-size: 1rem;
-    color: $cl-page2;
+    color: $cl-blue-light;
     width: 90%;
   }
 }
@@ -258,7 +258,7 @@
   min-height: 80px;
   height: 25%;
   color: $cl-white;
-  background: #222222;
+  background: $cl-black-light;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -270,7 +270,7 @@
   }
   p {
     font-size: 1rem;
-    color: $cl-page2;
+    color: $cl-blue-light;
     width: 90%;
   }
 }

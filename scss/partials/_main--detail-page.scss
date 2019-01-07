@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   h2 {
-    color: $cl-page1;
+    color: $cl-blue-dark;
     font-size: 1.6rem;
     font-weight: 500;
   }
@@ -25,7 +25,7 @@
   width: 100%;
 }
 
-// recommended-news section in the detail-page
+// Recommended-news section in the detail-page
 .section--recommended-news {
   //TODO
 }
@@ -38,7 +38,7 @@
   //TODO
 }
 
-// news-detail section in the detail-page
+// News-detail section in the detail-page
 .section--news-detail {
   //TODO
 }
@@ -51,7 +51,7 @@
   //TODO
 }
 
-// news-page article in the detail-page
+// News-page article in the detail-page
 .news-page {
   //TODO
 }
@@ -70,7 +70,7 @@
 
 .news-page__time {
   height: 30px;
-  color: $cl-page2;
+  color: $cl-blue-light;
   font-size: 1.1rem;
   line-height: 30px;
 }
@@ -91,13 +91,13 @@
       font-size: 22px;
     }
     &:nth-child(1) {
-      background: #306199;
+      background: $cl-facebook-background-blue;
     }
     &:nth-child(2) {
-      background: #1da1f3;
+      background: $cl-twitter-background-blue;
     }
     &:nth-child(3) {
-      background: #dd4b39;
+      background: $cl-google-plus-background-orange;
     }
   }
 }

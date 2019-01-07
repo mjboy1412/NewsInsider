@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   h2 {
-    color: $cl-page1;
+    color: $cl-blue-dark;
     font-size: 1.6rem;
     font-weight: 500;
   }
@@ -24,7 +24,7 @@
   width: 100%;
 }
 
-// breaking-news section in the index-page
+// Breaking-news section in the index-page
 .section--breaking-news {
   margin-top: 0;
   height: calc(400px + 15vw);
@@ -39,7 +39,7 @@
   height: calc(100% - 60px);
 }
 
-// recommended-read section in the index-page
+// Recommended-read section in the index-page
 .section--recommended-read {
   //TODO
 }
@@ -52,7 +52,7 @@
   //TODO
 }
 
-// latest stories section in the index-page
+// Latest stories section in the index-page
 .section--latest-stories {
   //TODO
 }
@@ -65,7 +65,7 @@
   //TODO
 }
 
-// trending section in the index-page
+// Trending section in the index-page
 .section--trending {
   //TODO
 }

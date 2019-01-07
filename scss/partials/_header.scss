@@ -1,6 +1,6 @@
 .header {
   height: 47px;
-  border-bottom: 1px solid $cl-gray;
+  border-bottom: 1px solid $cl-gray-light;
   position: fixed;
   background: $cl-white;
   z-index: 1;
@@ -8,12 +8,12 @@
   top: 0px;
 }
 
-//header for pc screen
+// Header for pc screen
 .header__wrapper--pc {
   //TODO
 }
 
-// disable header for pc screen when the screen size equals or less than 1230px
+// Disable header for pc screen when the screen size equals or less than 1230px
 @media screen and (max-width: $screen-min-xlg) {
   .header__wrapper--pc {
     display: none;
@@ -42,13 +42,13 @@
   //TODO
 }
 
-//header for mobile screen
+// Header for mobile screen
 .header__wrapper--mobile {
   display: flex;
   justify-content: space-between;
 }
 
-// disable header for mobile screen when the screen size is greater 1230px
+// Disable header for mobile screen when the screen size is greater 1230px
 @media not screen and (max-width: $screen-min-xlg) {
   .header__wrapper--mobile {
     display: none;
@@ -88,7 +88,7 @@
 .nav__head {
   a {
     h2 {
-      color: $cl-heading-1;
+      color: $cl-gray;
       font-size: 1rem;
     }
   }
@@ -110,11 +110,11 @@
 
 .nav__element:hover {
   box-sizing: border-box;
-  border-bottom: 2px solid $cl-page2;
+  border-bottom: 2px solid $cl-blue-light;
   .nav__head {
     a {
       h2 {
-        color: $cl-page2;
+        color: $cl-blue-light;
       }
     }
   }

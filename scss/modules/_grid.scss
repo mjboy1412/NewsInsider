@@ -17,7 +17,7 @@
   height: auto;
 }
 
-// grid size for extra small screen
+// Grid size for extra small screen
 .container {
   width: $container-xs;
 }
@@ -28,7 +28,7 @@
   }
 }
 
-// grid size for small screen
+// Grid size for small screen
 @media not screen and (max-width: $screen-min-sm) {
   .container {
     width: $container-sm;
@@ -40,7 +40,7 @@
   }
 }
 
-// grid size for medium screen
+// Grid size for medium screen
 @media not screen and (max-width: $screen-min-md) {
   .container {
     width: $container-md;
@@ -52,7 +52,7 @@
   }
 }
 
-// grid size for large screen
+// Grid size for large screen
 @media not screen and (max-width: $screen-min-lg) {
   .container {
     width: $container-lg;
@@ -64,7 +64,7 @@
   }
 }
 
-// grid size for extra large screen
+// Grid size for extra large screen
 @media not screen and (max-width: $screen-min-xlg) {
   .container {
     width: $container-xlg;

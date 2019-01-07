@@ -4,7 +4,7 @@
   top: 0;
   height: 100vh;
   z-index: 3;
-  background: $cl-lightblue;
+  background: $cl-blue-lighter;
   color: $cl-white;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 .nav-aside__logo {
   height: 47px;
   width: 80%;
-  border-bottom: 1px solid $cl-page1;
+  border-bottom: 1px solid $cl-blue-dark;
 }
 
 .nav-aside__list {
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     height: calc(100% / 7);
-    color: $cl-heading-1;
+    color: $cl-gray;
     font-size: 1.3rem;
     width: 100%;
     overflow: hidden;
@@ -53,7 +53,7 @@
 .body-cover {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: $cl-body-cover-background-black;
   display: flex;
   position: fixed;
   z-index: 2;
@@ -72,7 +72,7 @@
 .feedback__wrapper {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
+  background: $cl-feedback-cover-background-black;
   display: flex;
   position: fixed;
   z-index: 2;
@@ -103,7 +103,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $cl-gray;
+  border-bottom: 1px solid $cl-gray-light;
   p {
     font-size: 1.6rem;
     color: $cl-black;
@@ -129,7 +129,7 @@
   justify-content: center;
   width: 100%;
   z-index: 1;
-  background: #eaeaea;
+  background: $cl-search-dropdown-background-gray;
 }
 
 .search-dropdown--on {
@@ -141,7 +141,7 @@
 }
 
 .search-dropdown__form {
-  background: #eaeaea;
+  background: $cl-transparent;
   height: 32.5px;
   box-sizing: border-box;
   display: flex;

@@ -14,7 +14,7 @@
     span, h1 {
       position: relative;
       display: inline;
-      color: $cl-page1;
+      color: $cl-blue-dark;
       font-weight: 700;
       font-family: 'Arvo', serif;
       font-size: 1.8rem;
@@ -30,11 +30,11 @@
 }
 
 .logo--stack {
-  color: #241f20;
+  color: $cl-logo-stack-font-color-black;
   font-size: 20px;
 }
 
 .logo--x {
   font-size: 17px;
-  color: $cl-gray;
+  color: $cl-gray-light;
 }

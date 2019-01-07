@@ -9,11 +9,11 @@
   border-radius: 5px;
   border: none;
   color: $cl-white;
-  background: #337ab7;
+  background: $cl-send-feedback-button-background-blue;
 }
 
 .btn--toggle-mobile {
-  border: 1px solid $cl-gray;
+  border: 1px solid $cl-gray-light;
   height: 30px;
   width: 30px;
   border-radius: 5px;
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $cl-heading-1;
+  color: $cl-gray;
   background: $cl-white;
   font-size: 1.7rem;
   left: calc(100% + 5px);
@@ -51,7 +51,7 @@
   align-items: center;
   margin-right: 20px;
   border: none;
-  background: transparent;
+  background: $cl-transparent;
 }
 
 .btn--toggle-feedback {
@@ -62,14 +62,14 @@
   position: fixed;
   bottom: 0;
   right: 5%;
-  background: #2C2C2C;
+  background: $cl-feedback-button-background-black;
   color: $cl-white;
   font-size: 14px;
   border-radius: 5px 5px 0px 0px;
   z-index: 1;
 }
 
-// disable feedback__toggle when screen lower than 1230px;
+// Disable feedback__toggle when screen lower than 1230px;
 @media not screen and (min-width: $screen-min-xlg) {
   .btn--toggle-feedback {
     display: none;
@@ -77,13 +77,13 @@
 }
 
 .btn--subscription {
-  background: #4cb9ea;
+  background: $cl-subscription-button-background-blue;
   width: 51px;
   border-radius: 0px 5px 5px 0px;
   outline: none;
   color: $cl-white;
   cursor: pointer;
   &:hover {
-    background: $cl-page1;
+    background: $cl-blue-dark;
   }
 }
