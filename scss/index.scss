@@ -12,11 +12,7 @@
 @import "modules/_global";
 
 //partial
-@import "partials/feedback-wrapper/this/_feedback-wrapper";
-@import "partials/header--pc/this/_header--pc";
-@import "partials/header--mobile/this/_header--mobile";
-@import "partials/nav-aside/this/_nav-aside";
-@import "partials/body-cover/this/_body-cover";
-@import "partials/search-dropdown/this/_search-dropdown";
-@import "partials/main--index/this/_main--index";
-@import "partials/footer/this/_footer";
+@import "partials/_header";
+@import "partials/other_hidden_elements";
+@import "partials/_main--index";
+@import "partials/_footer";

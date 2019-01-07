@@ -1,0 +1,151 @@
+// This nav-aside will be used when the device-screen equals or less than 1230px
+.nav-aside {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 3;
+  background: $cl-lightblue;
+  color: $cl-white;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  transition: left 1s ease-in-out;
+  align-items: center;
+}
+
+.nav-aside--on {
+  left: 0;
+  transition: left 0.5s ease-in-out;
+}
+
+.nav-aside--off {
+  left: -100%;
+  transition: left 0.5s ease-in-out;
+}
+
+.nav-aside__logo {
+  height: 47px;
+  width: 80%;
+  border-bottom: 1px solid $cl-page1;
+}
+
+.nav-aside__list {
+  width: 60%;
+  display: flex;
+  height: 269px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 269px;
+  overflow-y: auto;
+  a {
+    display: flex;
+    align-items: center;
+    height: calc(100% / 7);
+    color: $cl-heading-1;
+    font-size: 1.3rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+// This body-cover will make the page darker for user to focus on some other important elements above it
+.body-cover {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+}
+
+.body-cover--on {
+  display: flex;
+}
+
+.body-cover--off {
+  display: none;
+}
+
+// This only appears when user click on feedback button
+.feedback__wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__wrapper--on {
+  display: flex;
+}
+
+.feedback__wrapper--off {
+  display: none;
+}
+
+.feedback__popup {
+  background: $cl-white;
+  border-radius: 5px;
+  padding: 10px 20px 15px 20px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 312px;
+}
+
+.feedback__head {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $cl-gray;
+  p {
+    font-size: 1.6rem;
+    color: $cl-black;
+  }
+}
+
+.feedback__form {
+  height: 251px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+// This section will appear when user click on toggle search button
+.search-dropdown {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  background: #eaeaea;
+}
+
+.search-dropdown--on {
+  display: flex;
+}
+
+.search-dropdown--off {
+  display: none;
+}
+
+.search-dropdown__form {
+  background: #eaeaea;
+  height: 32.5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

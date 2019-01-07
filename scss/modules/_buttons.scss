@@ -23,7 +23,7 @@
   background: $cl-white;
 }
 
-.btn--close-sidenav {
+.btn--close-nav-aside {
   position: absolute;
   width: 3rem;
   height: 3rem;
@@ -43,6 +43,15 @@
   width: 45px;
   height: 100%;
   border-radius: 0px 5px 5px 0px;
+}
+
+.btn--toggle-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border: none;
+  background: transparent;
 }
 
 .btn--toggle-feedback {
